@@ -277,7 +277,7 @@ public class CustomCalendarView extends LinearLayout {
         return (DayView) getView(DAY_OF_MONTH_TEXT, currentCalendar);
     }
 
-    private int getDayIndexByDate(Calendar currentCalendar) {
+    public int getDayIndexByDate(Calendar currentCalendar) {
         int monthOffset = getMonthOffset(currentCalendar);
         int currentDay = currentCalendar.get(Calendar.DAY_OF_MONTH);
         int index = currentDay + monthOffset;
